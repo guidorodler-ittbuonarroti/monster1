@@ -9,11 +9,15 @@ public class Monster {
         this.nome=nome;
         this.punti_vita=punti_vita;
     }
-    public String attacca(){
-
+    public int attacca(){
+        return danno;
     }
     public String subisci(){
-
+        punti_vita=punti_vita-danno;
+        return "danno subito";
+    }
+    public  String toString(){
+        return ("il mostro ha"+punti_vita+"e subisce un danno pari a"+danno+"a ogni colpo");
     }
 
 }
