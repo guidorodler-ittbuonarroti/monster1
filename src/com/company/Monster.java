@@ -3,21 +3,25 @@ package com.company;
 public class Monster {
     String nome;
     int punti_vita;
-    int danno;
+    int attacco;
+
+    boolean vivo;
     //metodi
-    Monster(String nome,int punti_vita){
+    Monster(String nome,int punti_vita,int attacco){
         this.nome=nome;
         this.punti_vita=punti_vita;
+        vivo=true;
     }
     public int attacca(){
-        return danno;
+        return attacco;
     }
-    public String subisci(){
+    public void subisci( int danno){
         punti_vita=punti_vita-danno;
-        return "danno subito";
     }
     public  String toString(){
-        return ("il mostro ha"+punti_vita+"e subisce un danno pari a"+danno+"a ogni colpo");
+        return ("il mostro"+ nome+" ha"+punti_vita+"e infligge un danno pari a"+attacco+"a ogni colpo");
     }
-
+    public boolean getVita(){
+        return  vivo;
+    }
 }
