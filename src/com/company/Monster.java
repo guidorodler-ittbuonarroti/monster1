@@ -5,6 +5,7 @@ public class Monster {
     int punti_vita;
     int attacco;
 
+
     boolean vivo;
     //metodi
     Monster(String nome,int punti_vita,int attacco){
