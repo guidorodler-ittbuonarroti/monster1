@@ -5,10 +5,10 @@ public class Monster {
     int punti_vita;
     int attacco;
 
-
+    weapon arma;
     boolean vivo;
     //metodi
-    Monster(String nome,int punti_vita,int attacco){
+    Monster(String nome,int punti_vita,int attacco,weapon arma  ){
         this.nome=nome;
         this.punti_vita=punti_vita;
         vivo=true;
